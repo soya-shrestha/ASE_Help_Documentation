@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser
+  commentId: T:ASE_Assignment.MyAppCanvas.MyAppParser
+  id: MyAppParser
+  parent: ASE_Assignment.MyAppCanvas
+  children:
+  - ASE_Assignment.MyAppCanvas.MyAppParser.#ctor(BOOSE.CommandFactory,BOOSE.StoredProgram)
+  - ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand(System.String)
+  - ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram(System.String)
+  langs:
+  - csharp
+  - vb
+  name: MyAppParser
+  nameWithType: MyAppParser
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser
+  type: Class
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/MyAppCanvas/MyAppParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: MyAppParser
+    path: ASE Assignment/MyAppCanvas/MyAppParser.cs
+    startLine: 13
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment.MyAppCanvas
+  summary: Represents a parser for interpreting and executing commands within a program.
+  example: []
+  syntax:
+    content: 'public class MyAppParser : IParser'
+    content.vb: Public Class MyAppParser Implements IParser
+  inheritance:
+  - System.Object
+  implements:
+  - BOOSE.IParser
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser.#ctor(BOOSE.CommandFactory,BOOSE.StoredProgram)
+  commentId: M:ASE_Assignment.MyAppCanvas.MyAppParser.#ctor(BOOSE.CommandFactory,BOOSE.StoredProgram)
+  id: '#ctor(BOOSE.CommandFactory,BOOSE.StoredProgram)'
+  parent: ASE_Assignment.MyAppCanvas.MyAppParser
+  langs:
+  - csharp
+  - vb
+  name: MyAppParser(CommandFactory, StoredProgram)
+  nameWithType: MyAppParser.MyAppParser(CommandFactory, StoredProgram)
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser.MyAppParser(BOOSE.CommandFactory, BOOSE.StoredProgram)
+  type: Constructor
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/MyAppCanvas/MyAppParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: .ctor
+    path: ASE Assignment/MyAppCanvas/MyAppParser.cs
+    startLine: 18
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment.MyAppCanvas
+  syntax:
+    content: public MyAppParser(CommandFactory factory, StoredProgram program)
+    parameters:
+    - id: factory
+      type: BOOSE.CommandFactory
+    - id: program
+      type: BOOSE.StoredProgram
+    content.vb: Public Sub New(factory As CommandFactory, program As StoredProgram)
+  overload: ASE_Assignment.MyAppCanvas.MyAppParser.#ctor*
+  nameWithType.vb: MyAppParser.New(CommandFactory, StoredProgram)
+  fullName.vb: ASE_Assignment.MyAppCanvas.MyAppParser.New(BOOSE.CommandFactory, BOOSE.StoredProgram)
+  name.vb: New(CommandFactory, StoredProgram)
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand(System.String)
+  commentId: M:ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand(System.String)
+  id: ParseCommand(System.String)
+  parent: ASE_Assignment.MyAppCanvas.MyAppParser
+  langs:
+  - csharp
+  - vb
+  name: ParseCommand(string)
+  nameWithType: MyAppParser.ParseCommand(string)
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand(string)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/MyAppCanvas/MyAppParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ParseCommand
+    path: ASE Assignment/MyAppCanvas/MyAppParser.cs
+    startLine: 25
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment.MyAppCanvas
+  example: []
+  syntax:
+    content: public virtual ICommand ParseCommand(string line)
+    parameters:
+    - id: line
+      type: System.String
+    return:
+      type: BOOSE.ICommand
+    content.vb: Public Overridable Function ParseCommand(line As String) As ICommand
+  overload: ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand*
+  implements:
+  - BOOSE.IParser.ParseCommand(System.String)
+  nameWithType.vb: MyAppParser.ParseCommand(String)
+  fullName.vb: ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand(String)
+  name.vb: ParseCommand(String)
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram(System.String)
+  commentId: M:ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram(System.String)
+  id: ParseProgram(System.String)
+  parent: ASE_Assignment.MyAppCanvas.MyAppParser
+  langs:
+  - csharp
+  - vb
+  name: ParseProgram(string)
+  nameWithType: MyAppParser.ParseProgram(string)
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram(string)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/MyAppCanvas/MyAppParser.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ParseProgram
+    path: ASE Assignment/MyAppCanvas/MyAppParser.cs
+    startLine: 77
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment.MyAppCanvas
+  example: []
+  syntax:
+    content: public virtual void ParseProgram(string program)
+    parameters:
+    - id: program
+      type: System.String
+    content.vb: Public Overridable Sub ParseProgram(program As String)
+  overload: ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram*
+  implements:
+  - BOOSE.IParser.ParseProgram(System.String)
+  nameWithType.vb: MyAppParser.ParseProgram(String)
+  fullName.vb: ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram(String)
+  name.vb: ParseProgram(String)
+references:
+- uid: ASE_Assignment.MyAppCanvas
+  commentId: N:ASE_Assignment.MyAppCanvas
+  href: ASE_Assignment.html
+  name: ASE_Assignment.MyAppCanvas
+  nameWithType: ASE_Assignment.MyAppCanvas
+  fullName: ASE_Assignment.MyAppCanvas
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.MyAppCanvas
+    name: MyAppCanvas
+    href: ASE_Assignment.MyAppCanvas.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.MyAppCanvas
+    name: MyAppCanvas
+    href: ASE_Assignment.MyAppCanvas.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.IParser
+  commentId: T:BOOSE.IParser
+  parent: BOOSE
+  isExternal: true
+  name: IParser
+  nameWithType: IParser
+  fullName: BOOSE.IParser
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser.#ctor*
+  commentId: Overload:ASE_Assignment.MyAppCanvas.MyAppParser.#ctor
+  href: ASE_Assignment.MyAppCanvas.MyAppParser.html#ASE_Assignment_MyAppCanvas_MyAppParser__ctor_BOOSE_CommandFactory_BOOSE_StoredProgram_
+  name: MyAppParser
+  nameWithType: MyAppParser.MyAppParser
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser.MyAppParser
+  nameWithType.vb: MyAppParser.New
+  fullName.vb: ASE_Assignment.MyAppCanvas.MyAppParser.New
+  name.vb: New
+- uid: BOOSE.CommandFactory
+  commentId: T:BOOSE.CommandFactory
+  parent: BOOSE
+  isExternal: true
+  name: CommandFactory
+  nameWithType: CommandFactory
+  fullName: BOOSE.CommandFactory
+- uid: BOOSE.StoredProgram
+  commentId: T:BOOSE.StoredProgram
+  parent: BOOSE
+  isExternal: true
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: BOOSE.StoredProgram
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand*
+  commentId: Overload:ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand
+  href: ASE_Assignment.MyAppCanvas.MyAppParser.html#ASE_Assignment_MyAppCanvas_MyAppParser_ParseCommand_System_String_
+  name: ParseCommand
+  nameWithType: MyAppParser.ParseCommand
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser.ParseCommand
+- uid: BOOSE.IParser.ParseCommand(System.String)
+  commentId: M:BOOSE.IParser.ParseCommand(System.String)
+  parent: BOOSE.IParser
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ParseCommand(string)
+  nameWithType: IParser.ParseCommand(string)
+  fullName: BOOSE.IParser.ParseCommand(string)
+  nameWithType.vb: IParser.ParseCommand(String)
+  fullName.vb: BOOSE.IParser.ParseCommand(String)
+  name.vb: ParseCommand(String)
+  spec.csharp:
+  - uid: BOOSE.IParser.ParseCommand(System.String)
+    name: ParseCommand
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IParser.ParseCommand(System.String)
+    name: ParseCommand
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram*
+  commentId: Overload:ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram
+  href: ASE_Assignment.MyAppCanvas.MyAppParser.html#ASE_Assignment_MyAppCanvas_MyAppParser_ParseProgram_System_String_
+  name: ParseProgram
+  nameWithType: MyAppParser.ParseProgram
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser.ParseProgram
+- uid: BOOSE.IParser.ParseProgram(System.String)
+  commentId: M:BOOSE.IParser.ParseProgram(System.String)
+  parent: BOOSE.IParser
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ParseProgram(string)
+  nameWithType: IParser.ParseProgram(string)
+  fullName: BOOSE.IParser.ParseProgram(string)
+  nameWithType.vb: IParser.ParseProgram(String)
+  fullName.vb: BOOSE.IParser.ParseProgram(String)
+  name.vb: ParseProgram(String)
+  spec.csharp:
+  - uid: BOOSE.IParser.ParseProgram(System.String)
+    name: ParseProgram
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.IParser.ParseProgram(System.String)
+    name: ParseProgram
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

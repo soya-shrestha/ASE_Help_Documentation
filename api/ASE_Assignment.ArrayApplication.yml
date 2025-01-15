@@ -1,0 +1,1776 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.ArrayApplication
+  commentId: T:ASE_Assignment.ArrayApplication
+  id: ArrayApplication
+  parent: ASE_Assignment
+  children:
+  - ASE_Assignment.ArrayApplication.#ctor
+  - ASE_Assignment.ArrayApplication.ArrayRestrictions
+  - ASE_Assignment.ArrayApplication.CheckParameters(System.String[])
+  - ASE_Assignment.ArrayApplication.Columns
+  - ASE_Assignment.ArrayApplication.Compile
+  - ASE_Assignment.ArrayApplication.Execute
+  - ASE_Assignment.ArrayApplication.GetIntArray(System.Int32,System.Int32)
+  - ASE_Assignment.ArrayApplication.GetRealArray(System.Int32,System.Int32)
+  - ASE_Assignment.ArrayApplication.IntValue
+  - ASE_Assignment.ArrayApplication.PEEK
+  - ASE_Assignment.ArrayApplication.POKE
+  - ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile(System.Boolean)
+  - ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute(System.Boolean)
+  - ASE_Assignment.ArrayApplication.RealValue
+  - ASE_Assignment.ArrayApplication.ReduceRestrictionCounter
+  - ASE_Assignment.ArrayApplication.Rows
+  - ASE_Assignment.ArrayApplication.SetIntArray(System.Int32,System.Int32,System.Int32)
+  - ASE_Assignment.ArrayApplication.SetRealArray(System.Double,System.Int32,System.Int32)
+  - ASE_Assignment.ArrayApplication.columnCurrent
+  - ASE_Assignment.ArrayApplication.columnExpression
+  - ASE_Assignment.ArrayApplication.columnsCount
+  - ASE_Assignment.ArrayApplication.intArray
+  - ASE_Assignment.ArrayApplication.peekValue
+  - ASE_Assignment.ArrayApplication.pokeValue
+  - ASE_Assignment.ArrayApplication.realArray
+  - ASE_Assignment.ArrayApplication.rowCurrent
+  - ASE_Assignment.ArrayApplication.rowExpression
+  - ASE_Assignment.ArrayApplication.rowsCount
+  - ASE_Assignment.ArrayApplication.type
+  langs:
+  - csharp
+  - vb
+  name: ArrayApplication
+  nameWithType: ArrayApplication
+  fullName: ASE_Assignment.ArrayApplication
+  type: Class
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ArrayApplication
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 13
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: >-
+    Represents an array application command that handles operations on arrays such as "poke" and "peek".
+
+    This class supports both integer and real arrays.
+  example: []
+  syntax:
+    content: 'public class ArrayApplication : Evaluation, ICommand'
+    content.vb: Public Class ArrayApplication Inherits Evaluation Implements ICommand
+  inheritance:
+  - System.Object
+  - BOOSE.Command
+  - BOOSE.Evaluation
+  derivedClasses:
+  - ASE_Assignment.PeekApplication
+  - ASE_Assignment.PokeApplication
+  implements:
+  - BOOSE.ICommand
+  inheritedMembers:
+  - BOOSE.Evaluation.expression
+  - BOOSE.Evaluation.evaluatedExpression
+  - BOOSE.Evaluation.varName
+  - BOOSE.Evaluation.value
+  - BOOSE.Evaluation.ProcessExpression(System.String)
+  - BOOSE.Evaluation.Expression
+  - BOOSE.Evaluation.VarName
+  - BOOSE.Evaluation.Value
+  - BOOSE.Evaluation.Local
+  - BOOSE.Command.program
+  - BOOSE.Command.parameterList
+  - BOOSE.Command.parameters
+  - BOOSE.Command.paramsint
+  - BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  - BOOSE.Command.ProcessParameters(System.String)
+  - BOOSE.Command.ToString
+  - BOOSE.Command.Program
+  - BOOSE.Command.Name
+  - BOOSE.Command.ParameterList
+  - BOOSE.Command.Parameters
+  - BOOSE.Command.Paramsint
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ASE_Assignment.ArrayApplication.PEEK
+  commentId: F:ASE_Assignment.ArrayApplication.PEEK
+  id: PEEK
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: PEEK
+  nameWithType: ArrayApplication.PEEK
+  fullName: ASE_Assignment.ArrayApplication.PEEK
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: PEEK
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 18
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Constant for the "peek" operation (false).
+  example: []
+  syntax:
+    content: protected const bool PEEK = false
+    return:
+      type: System.Boolean
+    content.vb: Protected Const PEEK As Boolean = False
+- uid: ASE_Assignment.ArrayApplication.POKE
+  commentId: F:ASE_Assignment.ArrayApplication.POKE
+  id: POKE
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: POKE
+  nameWithType: ArrayApplication.POKE
+  fullName: ASE_Assignment.ArrayApplication.POKE
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: POKE
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 23
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Constant for the "poke" operation (true).
+  example: []
+  syntax:
+    content: public const bool POKE = true
+    return:
+      type: System.Boolean
+    content.vb: Public Const POKE As Boolean = True
+- uid: ASE_Assignment.ArrayApplication.type
+  commentId: F:ASE_Assignment.ArrayApplication.type
+  id: type
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: ArrayApplication.type
+  fullName: ASE_Assignment.ArrayApplication.type
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: type
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 28
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The type of the array (either "int" or "real").
+  example: []
+  syntax:
+    content: protected string type
+    return:
+      type: System.String
+    content.vb: Protected type As String
+- uid: ASE_Assignment.ArrayApplication.IntValue
+  commentId: F:ASE_Assignment.ArrayApplication.IntValue
+  id: IntValue
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: IntValue
+  nameWithType: ArrayApplication.IntValue
+  fullName: ASE_Assignment.ArrayApplication.IntValue
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: IntValue
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 33
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The integer value used in array operations.
+  example: []
+  syntax:
+    content: protected int IntValue
+    return:
+      type: System.Int32
+    content.vb: Protected IntValue As Integer
+- uid: ASE_Assignment.ArrayApplication.RealValue
+  commentId: F:ASE_Assignment.ArrayApplication.RealValue
+  id: RealValue
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: RealValue
+  nameWithType: ArrayApplication.RealValue
+  fullName: ASE_Assignment.ArrayApplication.RealValue
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: RealValue
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 38
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The real value used in array operations.
+  example: []
+  syntax:
+    content: protected double RealValue
+    return:
+      type: System.Double
+    content.vb: Protected RealValue As Double
+- uid: ASE_Assignment.ArrayApplication.rowsCount
+  commentId: F:ASE_Assignment.ArrayApplication.rowsCount
+  id: rowsCount
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: rowsCount
+  nameWithType: ArrayApplication.rowsCount
+  fullName: ASE_Assignment.ArrayApplication.rowsCount
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: rowsCount
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 43
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The number of rows in the array.
+  example: []
+  syntax:
+    content: protected int rowsCount
+    return:
+      type: System.Int32
+    content.vb: Protected rowsCount As Integer
+- uid: ASE_Assignment.ArrayApplication.columnsCount
+  commentId: F:ASE_Assignment.ArrayApplication.columnsCount
+  id: columnsCount
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: columnsCount
+  nameWithType: ArrayApplication.columnsCount
+  fullName: ASE_Assignment.ArrayApplication.columnsCount
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: columnsCount
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 48
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The number of columns in the array (default is 1).
+  example: []
+  syntax:
+    content: protected int columnsCount
+    return:
+      type: System.Int32
+    content.vb: Protected columnsCount As Integer
+- uid: ASE_Assignment.ArrayApplication.intArray
+  commentId: F:ASE_Assignment.ArrayApplication.intArray
+  id: intArray
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: intArray
+  nameWithType: ArrayApplication.intArray
+  fullName: ASE_Assignment.ArrayApplication.intArray
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: intArray
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 53
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The integer array used for storage.
+  example: []
+  syntax:
+    content: protected int[,] intArray
+    return:
+      type: System.Int32[,]
+    content.vb: Protected intArray As Integer(,)
+- uid: ASE_Assignment.ArrayApplication.realArray
+  commentId: F:ASE_Assignment.ArrayApplication.realArray
+  id: realArray
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: realArray
+  nameWithType: ArrayApplication.realArray
+  fullName: ASE_Assignment.ArrayApplication.realArray
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: realArray
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 58
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The real array used for storage.
+  example: []
+  syntax:
+    content: protected double[,] realArray
+    return:
+      type: System.Double[,]
+    content.vb: Protected realArray As Double(,)
+- uid: ASE_Assignment.ArrayApplication.pokeValue
+  commentId: F:ASE_Assignment.ArrayApplication.pokeValue
+  id: pokeValue
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: pokeValue
+  nameWithType: ArrayApplication.pokeValue
+  fullName: ASE_Assignment.ArrayApplication.pokeValue
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: pokeValue
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 63
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The variable for poke operations.
+  example: []
+  syntax:
+    content: protected string pokeValue
+    return:
+      type: System.String
+    content.vb: Protected pokeValue As String
+- uid: ASE_Assignment.ArrayApplication.peekValue
+  commentId: F:ASE_Assignment.ArrayApplication.peekValue
+  id: peekValue
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: peekValue
+  nameWithType: ArrayApplication.peekValue
+  fullName: ASE_Assignment.ArrayApplication.peekValue
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: peekValue
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 68
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The variable for peek operations.
+  example: []
+  syntax:
+    content: protected string peekValue
+    return:
+      type: System.String
+    content.vb: Protected peekValue As String
+- uid: ASE_Assignment.ArrayApplication.rowExpression
+  commentId: F:ASE_Assignment.ArrayApplication.rowExpression
+  id: rowExpression
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: rowExpression
+  nameWithType: ArrayApplication.rowExpression
+  fullName: ASE_Assignment.ArrayApplication.rowExpression
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: rowExpression
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 73
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The row expression used in array operations.
+  example: []
+  syntax:
+    content: protected string rowExpression
+    return:
+      type: System.String
+    content.vb: Protected rowExpression As String
+- uid: ASE_Assignment.ArrayApplication.columnExpression
+  commentId: F:ASE_Assignment.ArrayApplication.columnExpression
+  id: columnExpression
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: columnExpression
+  nameWithType: ArrayApplication.columnExpression
+  fullName: ASE_Assignment.ArrayApplication.columnExpression
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: columnExpression
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 78
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The column expression used in array operations.
+  example: []
+  syntax:
+    content: protected string columnExpression
+    return:
+      type: System.String
+    content.vb: Protected columnExpression As String
+- uid: ASE_Assignment.ArrayApplication.rowCurrent
+  commentId: F:ASE_Assignment.ArrayApplication.rowCurrent
+  id: rowCurrent
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: rowCurrent
+  nameWithType: ArrayApplication.rowCurrent
+  fullName: ASE_Assignment.ArrayApplication.rowCurrent
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: rowCurrent
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 83
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The current row index used in array operations.
+  example: []
+  syntax:
+    content: protected int rowCurrent
+    return:
+      type: System.Int32
+    content.vb: Protected rowCurrent As Integer
+- uid: ASE_Assignment.ArrayApplication.columnCurrent
+  commentId: F:ASE_Assignment.ArrayApplication.columnCurrent
+  id: columnCurrent
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: columnCurrent
+  nameWithType: ArrayApplication.columnCurrent
+  fullName: ASE_Assignment.ArrayApplication.columnCurrent
+  type: Field
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: columnCurrent
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 88
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: The current column index used in array operations.
+  example: []
+  syntax:
+    content: protected int columnCurrent
+    return:
+      type: System.Int32
+    content.vb: Protected columnCurrent As Integer
+- uid: ASE_Assignment.ArrayApplication.Rows
+  commentId: P:ASE_Assignment.ArrayApplication.Rows
+  id: Rows
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: Rows
+  nameWithType: ArrayApplication.Rows
+  fullName: ASE_Assignment.ArrayApplication.Rows
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: Rows
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 98
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Gets the number of rows in the array.
+  example: []
+  syntax:
+    content: protected int Rows { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Protected ReadOnly Property Rows As Integer
+  overload: ASE_Assignment.ArrayApplication.Rows*
+- uid: ASE_Assignment.ArrayApplication.Columns
+  commentId: P:ASE_Assignment.ArrayApplication.Columns
+  id: Columns
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: ArrayApplication.Columns
+  fullName: ASE_Assignment.ArrayApplication.Columns
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: Columns
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 103
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Gets the number of columns in the array.
+  example: []
+  syntax:
+    content: protected int Columns { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Protected ReadOnly Property Columns As Integer
+  overload: ASE_Assignment.ArrayApplication.Columns*
+- uid: ASE_Assignment.ArrayApplication.#ctor
+  commentId: M:ASE_Assignment.ArrayApplication.#ctor
+  id: '#ctor'
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: ArrayApplication()
+  nameWithType: ArrayApplication.ArrayApplication()
+  fullName: ASE_Assignment.ArrayApplication.ArrayApplication()
+  type: Constructor
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: .ctor
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 108
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Initializes a new instance of the ArrayApp class.
+  example: []
+  syntax:
+    content: public ArrayApplication()
+    content.vb: Public Sub New()
+  overload: ASE_Assignment.ArrayApplication.#ctor*
+  nameWithType.vb: ArrayApplication.New()
+  fullName.vb: ASE_Assignment.ArrayApplication.New()
+  name.vb: New()
+- uid: ASE_Assignment.ArrayApplication.ArrayRestrictions
+  commentId: M:ASE_Assignment.ArrayApplication.ArrayRestrictions
+  id: ArrayRestrictions
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: ArrayRestrictions()
+  nameWithType: ArrayApplication.ArrayRestrictions()
+  fullName: ASE_Assignment.ArrayApplication.ArrayRestrictions()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ArrayRestrictions
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 115
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Defines restrictions for the array application.
+  example: []
+  syntax:
+    content: public void ArrayRestrictions()
+    content.vb: Public Sub ArrayRestrictions()
+  overload: ASE_Assignment.ArrayApplication.ArrayRestrictions*
+- uid: ASE_Assignment.ArrayApplication.ReduceRestrictionCounter
+  commentId: M:ASE_Assignment.ArrayApplication.ReduceRestrictionCounter
+  id: ReduceRestrictionCounter
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: ReduceRestrictionCounter()
+  nameWithType: ArrayApplication.ReduceRestrictionCounter()
+  fullName: ASE_Assignment.ArrayApplication.ReduceRestrictionCounter()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ReduceRestrictionCounter
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 123
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Reduces the restriction counter for the array.
+  example: []
+  syntax:
+    content: protected void ReduceRestrictionCounter()
+    content.vb: Protected Sub ReduceRestrictionCounter()
+  overload: ASE_Assignment.ArrayApplication.ReduceRestrictionCounter*
+- uid: ASE_Assignment.ArrayApplication.Compile
+  commentId: M:ASE_Assignment.ArrayApplication.Compile
+  id: Compile
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: ArrayApplication.Compile()
+  fullName: ASE_Assignment.ArrayApplication.Compile()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: Compile
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 131
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Compiles the array definition by validating parameters and adding the array to the program's variable list.
+  example: []
+  syntax:
+    content: public override void Compile()
+    content.vb: Public Overrides Sub Compile()
+  overridden: BOOSE.Evaluation.Compile
+  overload: ASE_Assignment.ArrayApplication.Compile*
+- uid: ASE_Assignment.ArrayApplication.CheckParameters(System.String[])
+  commentId: M:ASE_Assignment.ArrayApplication.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: ArrayApplication.CheckParameters(string[])
+  fullName: ASE_Assignment.ArrayApplication.CheckParameters(string[])
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: CheckParameters
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 162
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Validates the parameters for the array application.
+  example: []
+  syntax:
+    content: public override void CheckParameters(string[] parameterList)
+    parameters:
+    - id: parameterList
+      type: System.String[]
+      description: The list of parameters for the array operation.
+    content.vb: Public Overrides Sub CheckParameters(parameterList As String())
+  overridden: BOOSE.Evaluation.CheckParameters(System.String[])
+  overload: ASE_Assignment.ArrayApplication.CheckParameters*
+  nameWithType.vb: ArrayApplication.CheckParameters(String())
+  fullName.vb: ASE_Assignment.ArrayApplication.CheckParameters(String())
+  name.vb: CheckParameters(String())
+- uid: ASE_Assignment.ArrayApplication.Execute
+  commentId: M:ASE_Assignment.ArrayApplication.Execute
+  id: Execute
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: ArrayApplication.Execute()
+  fullName: ASE_Assignment.ArrayApplication.Execute()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: Execute
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 176
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Executes the array operation, initializing the array with the appropriate type (integer or real).
+  example: []
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: BOOSE.Evaluation.Execute
+  overload: ASE_Assignment.ArrayApplication.Execute*
+- uid: ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile(System.Boolean)
+  commentId: M:ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile(System.Boolean)
+  id: ProcessArrayParametersCompile(System.Boolean)
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: ProcessArrayParametersCompile(bool)
+  nameWithType: ArrayApplication.ProcessArrayParametersCompile(bool)
+  fullName: ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile(bool)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ProcessArrayParametersCompile
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 198
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Processes the array parameters during compilation for "poke" or "peek" operations.
+  example: []
+  syntax:
+    content: protected virtual void ProcessArrayParametersCompile(bool isPokeOperation)
+    parameters:
+    - id: isPokeOperation
+      type: System.Boolean
+      description: Indicates whether the operation is "poke" (true) or "peek" (false).
+    content.vb: Protected Overridable Sub ProcessArrayParametersCompile(isPokeOperation As Boolean)
+  overload: ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile*
+  nameWithType.vb: ArrayApplication.ProcessArrayParametersCompile(Boolean)
+  fullName.vb: ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile(Boolean)
+  name.vb: ProcessArrayParametersCompile(Boolean)
+- uid: ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute(System.Boolean)
+  commentId: M:ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute(System.Boolean)
+  id: ProcessArrayParametersExecute(System.Boolean)
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: ProcessArrayParametersExecute(bool)
+  nameWithType: ArrayApplication.ProcessArrayParametersExecute(bool)
+  fullName: ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute(bool)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: ProcessArrayParametersExecute
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 239
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Executes the array operation, either setting or retrieving a value from the array.
+  example: []
+  syntax:
+    content: protected virtual void ProcessArrayParametersExecute(bool isPokeOperation)
+    parameters:
+    - id: isPokeOperation
+      type: System.Boolean
+      description: Indicates whether the operation is "poke" (true) or "peek" (false).
+    content.vb: Protected Overridable Sub ProcessArrayParametersExecute(isPokeOperation As Boolean)
+  overload: ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute*
+  nameWithType.vb: ArrayApplication.ProcessArrayParametersExecute(Boolean)
+  fullName.vb: ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute(Boolean)
+  name.vb: ProcessArrayParametersExecute(Boolean)
+- uid: ASE_Assignment.ArrayApplication.SetIntArray(System.Int32,System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.ArrayApplication.SetIntArray(System.Int32,System.Int32,System.Int32)
+  id: SetIntArray(System.Int32,System.Int32,System.Int32)
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: SetIntArray(int, int, int)
+  nameWithType: ArrayApplication.SetIntArray(int, int, int)
+  fullName: ASE_Assignment.ArrayApplication.SetIntArray(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: SetIntArray
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 315
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Sets a value at the specified row and column in the integer array.
+  example: []
+  syntax:
+    content: public virtual void SetIntArray(int value, int row, int col)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value to set.
+    - id: row
+      type: System.Int32
+      description: The row index.
+    - id: col
+      type: System.Int32
+      description: The column index.
+    content.vb: Public Overridable Sub SetIntArray(value As Integer, row As Integer, col As Integer)
+  overload: ASE_Assignment.ArrayApplication.SetIntArray*
+  nameWithType.vb: ArrayApplication.SetIntArray(Integer, Integer, Integer)
+  fullName.vb: ASE_Assignment.ArrayApplication.SetIntArray(Integer, Integer, Integer)
+  name.vb: SetIntArray(Integer, Integer, Integer)
+- uid: ASE_Assignment.ArrayApplication.SetRealArray(System.Double,System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.ArrayApplication.SetRealArray(System.Double,System.Int32,System.Int32)
+  id: SetRealArray(System.Double,System.Int32,System.Int32)
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: SetRealArray(double, int, int)
+  nameWithType: ArrayApplication.SetRealArray(double, int, int)
+  fullName: ASE_Assignment.ArrayApplication.SetRealArray(double, int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: SetRealArray
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 327
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Sets a value at the specified row and column in the real array.
+  example: []
+  syntax:
+    content: public virtual void SetRealArray(double value, int row, int col)
+    parameters:
+    - id: value
+      type: System.Double
+      description: The value to set.
+    - id: row
+      type: System.Int32
+      description: The row index.
+    - id: col
+      type: System.Int32
+      description: The column index.
+    content.vb: Public Overridable Sub SetRealArray(value As Double, row As Integer, col As Integer)
+  overload: ASE_Assignment.ArrayApplication.SetRealArray*
+  nameWithType.vb: ArrayApplication.SetRealArray(Double, Integer, Integer)
+  fullName.vb: ASE_Assignment.ArrayApplication.SetRealArray(Double, Integer, Integer)
+  name.vb: SetRealArray(Double, Integer, Integer)
+- uid: ASE_Assignment.ArrayApplication.GetIntArray(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.ArrayApplication.GetIntArray(System.Int32,System.Int32)
+  id: GetIntArray(System.Int32,System.Int32)
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: GetIntArray(int, int)
+  nameWithType: ArrayApplication.GetIntArray(int, int)
+  fullName: ASE_Assignment.ArrayApplication.GetIntArray(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: GetIntArray
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 339
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Gets the value from the specified row and column in the integer array.
+  example: []
+  syntax:
+    content: public virtual int GetIntArray(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+      description: The row index.
+    - id: col
+      type: System.Int32
+      description: The column index.
+    return:
+      type: System.Int32
+      description: The value from the integer array.
+    content.vb: Public Overridable Function GetIntArray(row As Integer, col As Integer) As Integer
+  overload: ASE_Assignment.ArrayApplication.GetIntArray*
+  nameWithType.vb: ArrayApplication.GetIntArray(Integer, Integer)
+  fullName.vb: ASE_Assignment.ArrayApplication.GetIntArray(Integer, Integer)
+  name.vb: GetIntArray(Integer, Integer)
+- uid: ASE_Assignment.ArrayApplication.GetRealArray(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.ArrayApplication.GetRealArray(System.Int32,System.Int32)
+  id: GetRealArray(System.Int32,System.Int32)
+  parent: ASE_Assignment.ArrayApplication
+  langs:
+  - csharp
+  - vb
+  name: GetRealArray(int, int)
+  nameWithType: ArrayApplication.GetRealArray(int, int)
+  fullName: ASE_Assignment.ArrayApplication.GetRealArray(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/ASE Assignment/ArrayApplication.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-soya-shrestha.git
+    id: GetRealArray
+    path: ASE Assignment/ArrayApplication.cs
+    startLine: 351
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+  namespace: ASE_Assignment
+  summary: Gets the value from the specified row and column in the real array.
+  example: []
+  syntax:
+    content: public virtual double GetRealArray(int row, int col)
+    parameters:
+    - id: row
+      type: System.Int32
+      description: The row index.
+    - id: col
+      type: System.Int32
+      description: The column index.
+    return:
+      type: System.Double
+      description: The value from the real array.
+    content.vb: Public Overridable Function GetRealArray(row As Integer, col As Integer) As Double
+  overload: ASE_Assignment.ArrayApplication.GetRealArray*
+  nameWithType.vb: ArrayApplication.GetRealArray(Integer, Integer)
+  fullName.vb: ASE_Assignment.ArrayApplication.GetRealArray(Integer, Integer)
+  name.vb: GetRealArray(Integer, Integer)
+references:
+- uid: ASE_Assignment
+  commentId: N:ASE_Assignment
+  href: ASE_Assignment.html
+  name: ASE_Assignment
+  nameWithType: ASE_Assignment
+  fullName: ASE_Assignment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.Command
+  commentId: T:BOOSE.Command
+  parent: BOOSE
+  isExternal: true
+  name: Command
+  nameWithType: Command
+  fullName: BOOSE.Command
+- uid: BOOSE.Evaluation
+  commentId: T:BOOSE.Evaluation
+  parent: BOOSE
+  isExternal: true
+  name: Evaluation
+  nameWithType: Evaluation
+  fullName: BOOSE.Evaluation
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: BOOSE.Evaluation.expression
+  commentId: F:BOOSE.Evaluation.expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: expression
+  nameWithType: Evaluation.expression
+  fullName: BOOSE.Evaluation.expression
+- uid: BOOSE.Evaluation.evaluatedExpression
+  commentId: F:BOOSE.Evaluation.evaluatedExpression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: evaluatedExpression
+  nameWithType: Evaluation.evaluatedExpression
+  fullName: BOOSE.Evaluation.evaluatedExpression
+- uid: BOOSE.Evaluation.varName
+  commentId: F:BOOSE.Evaluation.varName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: varName
+  nameWithType: Evaluation.varName
+  fullName: BOOSE.Evaluation.varName
+- uid: BOOSE.Evaluation.value
+  commentId: F:BOOSE.Evaluation.value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: value
+  nameWithType: Evaluation.value
+  fullName: BOOSE.Evaluation.value
+- uid: BOOSE.Evaluation.ProcessExpression(System.String)
+  commentId: M:BOOSE.Evaluation.ProcessExpression(System.String)
+  parent: BOOSE.Evaluation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessExpression(string)
+  nameWithType: Evaluation.ProcessExpression(string)
+  fullName: BOOSE.Evaluation.ProcessExpression(string)
+  nameWithType.vb: Evaluation.ProcessExpression(String)
+  fullName.vb: BOOSE.Evaluation.ProcessExpression(String)
+  name.vb: ProcessExpression(String)
+  spec.csharp:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Evaluation.Expression
+  commentId: P:BOOSE.Evaluation.Expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Expression
+  nameWithType: Evaluation.Expression
+  fullName: BOOSE.Evaluation.Expression
+- uid: BOOSE.Evaluation.VarName
+  commentId: P:BOOSE.Evaluation.VarName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: VarName
+  nameWithType: Evaluation.VarName
+  fullName: BOOSE.Evaluation.VarName
+- uid: BOOSE.Evaluation.Value
+  commentId: P:BOOSE.Evaluation.Value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Value
+  nameWithType: Evaluation.Value
+  fullName: BOOSE.Evaluation.Value
+- uid: BOOSE.Evaluation.Local
+  commentId: P:BOOSE.Evaluation.Local
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Local
+  nameWithType: Evaluation.Local
+  fullName: BOOSE.Evaluation.Local
+- uid: BOOSE.Command.program
+  commentId: F:BOOSE.Command.program
+  parent: BOOSE.Command
+  isExternal: true
+  name: program
+  nameWithType: Command.program
+  fullName: BOOSE.Command.program
+- uid: BOOSE.Command.parameterList
+  commentId: F:BOOSE.Command.parameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameterList
+  nameWithType: Command.parameterList
+  fullName: BOOSE.Command.parameterList
+- uid: BOOSE.Command.parameters
+  commentId: F:BOOSE.Command.parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameters
+  nameWithType: Command.parameters
+  fullName: BOOSE.Command.parameters
+- uid: BOOSE.Command.paramsint
+  commentId: F:BOOSE.Command.paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: paramsint
+  nameWithType: Command.paramsint
+  fullName: BOOSE.Command.paramsint
+- uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Set(StoredProgram, string)
+  nameWithType: Command.Set(StoredProgram, string)
+  fullName: BOOSE.Command.Set(BOOSE.StoredProgram, string)
+  nameWithType.vb: Command.Set(StoredProgram, String)
+  fullName.vb: BOOSE.Command.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+  spec.csharp:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Command.ProcessParameters(System.String)
+  commentId: M:BOOSE.Command.ProcessParameters(System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessParameters(string)
+  nameWithType: Command.ProcessParameters(string)
+  fullName: BOOSE.Command.ProcessParameters(string)
+  nameWithType.vb: Command.ProcessParameters(String)
+  fullName.vb: BOOSE.Command.ProcessParameters(String)
+  name.vb: ProcessParameters(String)
+  spec.csharp:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Command.ToString
+  commentId: M:BOOSE.Command.ToString
+  parent: BOOSE.Command
+  isExternal: true
+  name: ToString()
+  nameWithType: Command.ToString()
+  fullName: BOOSE.Command.ToString()
+  spec.csharp:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.Command.Program
+  commentId: P:BOOSE.Command.Program
+  parent: BOOSE.Command
+  isExternal: true
+  name: Program
+  nameWithType: Command.Program
+  fullName: BOOSE.Command.Program
+- uid: BOOSE.Command.Name
+  commentId: P:BOOSE.Command.Name
+  parent: BOOSE.Command
+  isExternal: true
+  name: Name
+  nameWithType: Command.Name
+  fullName: BOOSE.Command.Name
+- uid: BOOSE.Command.ParameterList
+  commentId: P:BOOSE.Command.ParameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: ParameterList
+  nameWithType: Command.ParameterList
+  fullName: BOOSE.Command.ParameterList
+- uid: BOOSE.Command.Parameters
+  commentId: P:BOOSE.Command.Parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: Parameters
+  nameWithType: Command.Parameters
+  fullName: BOOSE.Command.Parameters
+- uid: BOOSE.Command.Paramsint
+  commentId: P:BOOSE.Command.Paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: Paramsint
+  nameWithType: Command.Paramsint
+  fullName: BOOSE.Command.Paramsint
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: ','
+  - name: )
+- uid: System.Double[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[,]
+  nameWithType: double[,]
+  fullName: double[,]
+  nameWithType.vb: Double(,)
+  fullName.vb: Double(,)
+  name.vb: Double(,)
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: ','
+  - name: )
+- uid: ASE_Assignment.ArrayApplication.Rows*
+  commentId: Overload:ASE_Assignment.ArrayApplication.Rows
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_Rows
+  name: Rows
+  nameWithType: ArrayApplication.Rows
+  fullName: ASE_Assignment.ArrayApplication.Rows
+- uid: ASE_Assignment.ArrayApplication.Columns*
+  commentId: Overload:ASE_Assignment.ArrayApplication.Columns
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_Columns
+  name: Columns
+  nameWithType: ArrayApplication.Columns
+  fullName: ASE_Assignment.ArrayApplication.Columns
+- uid: ASE_Assignment.ArrayApplication.#ctor*
+  commentId: Overload:ASE_Assignment.ArrayApplication.#ctor
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication__ctor
+  name: ArrayApplication
+  nameWithType: ArrayApplication.ArrayApplication
+  fullName: ASE_Assignment.ArrayApplication.ArrayApplication
+  nameWithType.vb: ArrayApplication.New
+  fullName.vb: ASE_Assignment.ArrayApplication.New
+  name.vb: New
+- uid: ASE_Assignment.ArrayApplication.ArrayRestrictions*
+  commentId: Overload:ASE_Assignment.ArrayApplication.ArrayRestrictions
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_ArrayRestrictions
+  name: ArrayRestrictions
+  nameWithType: ArrayApplication.ArrayRestrictions
+  fullName: ASE_Assignment.ArrayApplication.ArrayRestrictions
+- uid: ASE_Assignment.ArrayApplication.ReduceRestrictionCounter*
+  commentId: Overload:ASE_Assignment.ArrayApplication.ReduceRestrictionCounter
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_ReduceRestrictionCounter
+  name: ReduceRestrictionCounter
+  nameWithType: ArrayApplication.ReduceRestrictionCounter
+  fullName: ASE_Assignment.ArrayApplication.ReduceRestrictionCounter
+- uid: BOOSE.Evaluation.Compile
+  commentId: M:BOOSE.Evaluation.Compile
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Compile()
+  nameWithType: Evaluation.Compile()
+  fullName: BOOSE.Evaluation.Compile()
+  spec.csharp:
+  - uid: BOOSE.Evaluation.Compile
+    name: Compile
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.Compile
+    name: Compile
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.ArrayApplication.Compile*
+  commentId: Overload:ASE_Assignment.ArrayApplication.Compile
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_Compile
+  name: Compile
+  nameWithType: ArrayApplication.Compile
+  fullName: ASE_Assignment.ArrayApplication.Compile
+- uid: BOOSE.Evaluation.CheckParameters(System.String[])
+  commentId: M:BOOSE.Evaluation.CheckParameters(System.String[])
+  parent: BOOSE.Evaluation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CheckParameters(string[])
+  nameWithType: Evaluation.CheckParameters(string[])
+  fullName: BOOSE.Evaluation.CheckParameters(string[])
+  nameWithType.vb: Evaluation.CheckParameters(String())
+  fullName.vb: BOOSE.Evaluation.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: BOOSE.Evaluation.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.CheckParameters(System.String[])
+    name: CheckParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: ASE_Assignment.ArrayApplication.CheckParameters*
+  commentId: Overload:ASE_Assignment.ArrayApplication.CheckParameters
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: ArrayApplication.CheckParameters
+  fullName: ASE_Assignment.ArrayApplication.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: BOOSE.Evaluation.Execute
+  commentId: M:BOOSE.Evaluation.Execute
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Execute()
+  nameWithType: Evaluation.Execute()
+  fullName: BOOSE.Evaluation.Execute()
+  spec.csharp:
+  - uid: BOOSE.Evaluation.Execute
+    name: Execute
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.Execute
+    name: Execute
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.ArrayApplication.Execute*
+  commentId: Overload:ASE_Assignment.ArrayApplication.Execute
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_Execute
+  name: Execute
+  nameWithType: ArrayApplication.Execute
+  fullName: ASE_Assignment.ArrayApplication.Execute
+- uid: ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile*
+  commentId: Overload:ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_ProcessArrayParametersCompile_System_Boolean_
+  name: ProcessArrayParametersCompile
+  nameWithType: ArrayApplication.ProcessArrayParametersCompile
+  fullName: ASE_Assignment.ArrayApplication.ProcessArrayParametersCompile
+- uid: ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute*
+  commentId: Overload:ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_ProcessArrayParametersExecute_System_Boolean_
+  name: ProcessArrayParametersExecute
+  nameWithType: ArrayApplication.ProcessArrayParametersExecute
+  fullName: ASE_Assignment.ArrayApplication.ProcessArrayParametersExecute
+- uid: ASE_Assignment.ArrayApplication.SetIntArray*
+  commentId: Overload:ASE_Assignment.ArrayApplication.SetIntArray
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_SetIntArray_System_Int32_System_Int32_System_Int32_
+  name: SetIntArray
+  nameWithType: ArrayApplication.SetIntArray
+  fullName: ASE_Assignment.ArrayApplication.SetIntArray
+- uid: ASE_Assignment.ArrayApplication.SetRealArray*
+  commentId: Overload:ASE_Assignment.ArrayApplication.SetRealArray
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_SetRealArray_System_Double_System_Int32_System_Int32_
+  name: SetRealArray
+  nameWithType: ArrayApplication.SetRealArray
+  fullName: ASE_Assignment.ArrayApplication.SetRealArray
+- uid: ASE_Assignment.ArrayApplication.GetIntArray*
+  commentId: Overload:ASE_Assignment.ArrayApplication.GetIntArray
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_GetIntArray_System_Int32_System_Int32_
+  name: GetIntArray
+  nameWithType: ArrayApplication.GetIntArray
+  fullName: ASE_Assignment.ArrayApplication.GetIntArray
+- uid: ASE_Assignment.ArrayApplication.GetRealArray*
+  commentId: Overload:ASE_Assignment.ArrayApplication.GetRealArray
+  href: ASE_Assignment.ArrayApplication.html#ASE_Assignment_ArrayApplication_GetRealArray_System_Int32_System_Int32_
+  name: GetRealArray
+  nameWithType: ArrayApplication.GetRealArray
+  fullName: ASE_Assignment.ArrayApplication.GetRealArray

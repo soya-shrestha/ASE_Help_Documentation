@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.MyAppCanvas
+  commentId: N:ASE_Assignment.MyAppCanvas
+  id: ASE_Assignment.MyAppCanvas
+  children:
+  - ASE_Assignment.MyAppCanvas.MyAppParser
+  - ASE_Assignment.MyAppCanvas.MyCanvas
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment.MyAppCanvas
+  nameWithType: ASE_Assignment.MyAppCanvas
+  fullName: ASE_Assignment.MyAppCanvas
+  type: Namespace
+  assemblies:
+  - ASE Assignment_SoyaShrestha_77356846
+references:
+- uid: ASE_Assignment.MyAppCanvas.MyAppParser
+  commentId: T:ASE_Assignment.MyAppCanvas.MyAppParser
+  href: ASE_Assignment.MyAppCanvas.MyAppParser.html
+  name: MyAppParser
+  nameWithType: MyAppParser
+  fullName: ASE_Assignment.MyAppCanvas.MyAppParser
+- uid: ASE_Assignment.MyAppCanvas.MyCanvas
+  commentId: T:ASE_Assignment.MyAppCanvas.MyCanvas
+  href: ASE_Assignment.MyAppCanvas.MyCanvas.html
+  name: MyCanvas
+  nameWithType: MyCanvas
+  fullName: ASE_Assignment.MyAppCanvas.MyCanvas
